@@ -1,7 +1,39 @@
 body {
 	background-color: #f0f0f0;
+	overflow-x: hidden;
 }
 
+.navbar {
+	margin-bottom: 0px;
+}
+
+
 .background-first {
-	background-image: url('http://imagenesfotos.com/wp-content/2012/01/paisajes_preciosos3.jpg');
+	width: 100%;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("//imagenesfotos.com/wp-content/2012/01/paisajes_preciosos3.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	margin-bottom: 0px;
+	height: 350px;
+	color: white;
+	text-shadow: black 0.3em 0.3em 0.3em;
+    padding-top: 240px;
+    padding-bottom: 280px;
+}
+
+.background-second {
+	width: 100%;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("//imagenesfotos.com/wp-content/2012/01/paisajes_preciosos3.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	margin-bottom: 0px;
+	height: 350px;
+	color: white;
+	text-shadow: black 0.3em 0.3em 0.3em;
+}
+
+.containerBody1 {
+	margin: 50px;
 }
