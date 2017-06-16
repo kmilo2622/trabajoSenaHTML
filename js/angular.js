@@ -61,7 +61,33 @@ app.controller('valores', function($scope) {
 });
 
 app.controller('navigationController', function($scope) {
-	$scope.LinkFunc = function(link) {
+
+	var locationPage = location.toString();
+	var partsOfLocation = locationPage.split('/');
+	$scope.parts = partsOfLocation[partsOfLocation.length-1];
+
+	var last = $scope.parts
+
+	console.log(last);
+
+	var activeIndex = "";
+	var activeService = "";
+
+	switch (last) {
+		case 'index.html':
+		activeIndex = "active";
+		break;
+		case 'servicios.html':
+		activeService = "active";
+		break;
+		default:
+		break;
+	}
+
+	$scope.activeIndex = activeIndex;
+	$scope.activeService = activeService;
+
+	$scope.LinkFunc = function(link, idClass) {
 		window.location.assign(link);
 	}
 });
