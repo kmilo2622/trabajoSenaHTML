@@ -37,6 +37,11 @@ app.controller('controllerHeader', function($scope) {
 app.controller('controllerBody', function($scope) {
 	var titulo = $('#hiden_input').val();
 	$scope.name = titulo;
+	$scope.fecha = new Date();
+
+	$scope.calcularNacimiento = function(year, date) {
+		$scope.brith = (date-year);
+	}
 });
 
 app.controller('alertController', function($scope) {

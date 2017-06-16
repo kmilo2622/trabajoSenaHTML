@@ -1,6 +1,7 @@
 body {
 	background-color: #f0f0f0;
 	overflow-x: hidden;
+	font-family: 'Lato', sans-serif;
 }
 
 .navbar {
@@ -10,7 +11,7 @@ body {
 
 .background-first {
 	width: 100%;
-	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("//imagenesfotos.com/wp-content/2012/01/paisajes_preciosos3.jpg");
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("//i.ytimg.com/vi/QmRf5feJaUI/maxresdefault.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -35,4 +36,8 @@ body {
 
 .containerBody1 {
 	margin: 50px;
+}
+
+.input-center {
+	vertical-align: middle;
 }
