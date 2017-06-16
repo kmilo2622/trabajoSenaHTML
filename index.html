@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<!-- Primero definimos las meta etiquetas -->
+	<title>Actividad de HTML5, CSS y JavaScript | Juan Camilo Arroyave Rico</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Actividad de Aprendizaje para el Servicio Nacional de Aprendizaje SENA, de Juan Camilo Arroyave Rico sobre HTML, CSS y JavaScript">
+	<meta name="keywords" content="SENA,CSS,HTML5,JavaScript,Actividad,Aprendizaje">
+	<!-- Ahora Cargamos los Estilos -->
+	<!-- Esto es Bootstrap en cdn -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body ng-app="app">
+
+	<div ng-controller="valores">
+		<input type="hidden" id="hiden_input">
+	</div>
+
+	<header>
+		<div class="container">
+			<div class="jumbotron text-center background-first" ng-controller="controller">
+				<!-- Ahora Estamos usando angular para mostrar los elementos en pantalla -->
+				<h1>{{ page_title }}</h1>      
+				<p>
+					<p>Introduzca su nombre: <input type="text" ng-model="name"></p>
+					<p>Resultado: {{ name }}</p>
+				</p>
+			</div>
+			<div ng-controller="alertController">
+				<button id="click1" ng-click="functionClick1(3)">Dame Click</button>
+				<p id="demo"></p>
+			</div>
+		</div>
+	</header>
+
+	<footer>
+		<!-- Ahora Cargamos los Scripts es una buena práctica cargarlos en el footer-->
+		<!-- Comenzamos con jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!-- Ahora Angular JS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+		<script src="js/angular.js"></script>
+	</footer>
+
+</body>
+</html>
