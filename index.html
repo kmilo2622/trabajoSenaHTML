@@ -11,6 +11,7 @@
 	<!-- Esto es Bootstrap en cdn -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet"> 
 	<link rel="stylesheet" href="css/style.css">
 	<!-- Carguemos mejor los Scripts importantes al inicio -->
 	<!-- Comenzamos con jQuery -->
@@ -63,11 +64,11 @@
 
 				<div class="form-group">
 					<label class="control-label">Introduzca su Edad:</label>
-					<input type="text" class="form-control input-center" ng-change="calcularNacimiento(edad, fecha | date:'yyyy')" ng-model="edad">
+					<input type="number" class="form-control input-center" ng-change="calcularNacimiento(edad, fecha | date:'yyyy')" ng-model="edad">
 				</div>
 
 				<div class="form-group">
-					<button id="click1" class="btn btn-success" ng-click="functionClick1(3)">Enviar</button>
+					<button class="btn btn-success" ng-click="functionClick1(3)">Enviar</button>
 				</div>
 
 				<p id="demo"></p>
@@ -97,7 +98,7 @@
 
 			<br>
 
-			<div ng-if="occupation != null">
+			<div ng-if="occupation != null && occupation != ''">
 				<div class="form-group">
 					<label class="control-label col-sm-2">Ocupación:</label>
 					<div class="col-sm-10">
@@ -108,7 +109,7 @@
 
 			<br>
 
-			<div ng-if="edad != null">
+			<div ng-if="edad != null && edad != ''">
 				<div class="form-group">
 					<label class="control-label col-sm-2">Año de Nacimiento:</label>
 					<div class="col-sm-10">

@@ -4,20 +4,38 @@ body {
 	font-family: 'Lato', sans-serif;
 }
 
+footer {
+	background-color: #BDBDBD;
+	font-family: 'Bubbler One', sans-serif;
+	font-size: 15px;
+	color: white;
+	background: url("http://www.thebrasilians.com/wp-content/uploads/2016/08/footer-background-011.jpg");
+	font-weight: bold;
+	padding: 30px;
+}
+
+footer a {
+	color: white;
+}
+
+footer a:hover {
+	color: white;
+}
+
 .navbar {
 	margin-bottom: 0px;
+	box-shadow: 2px 10px 5px rgba(0, 0, 0, 0.6);
 }
 
 
 .background-first {
 	width: 100%;
-	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("//i.ytimg.com/vi/QmRf5feJaUI/maxresdefault.jpg");
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("//cdn.paper4pc.com/images/landscape-sunset-sun-reflection-wallpaper-1.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-	margin-bottom: 0px;
 	height: 350px;
-	color: white;
+	color: black;
 	text-shadow: black 0.3em 0.3em 0.3em;
     padding-top: 240px;
     padding-bottom: 280px;
@@ -25,12 +43,13 @@ body {
 
 .background-second {
 	width: 100%;
-	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("//imagenesfotos.com/wp-content/2012/01/paisajes_preciosos3.jpg");
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("//onfocusproduction.com/wp-content/uploads/2016/08/Landscape-wallpaper-16.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-	margin-bottom: 0px;
-	color: white;
+	margin-bottom: 10px;
+	color: black;
+	padding-top: 100px;
 	text-shadow: black 0.3em 0.3em 0.3em;
 }
 
@@ -40,4 +59,8 @@ body {
 
 .input-center {
 	vertical-align: middle;
+}
+
+.white {
+	background-color: white !important;
 }

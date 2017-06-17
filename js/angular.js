@@ -1,5 +1,14 @@
 var app = angular.module('app', []);
 
+/*
+Al final con solo JavaScript, jQuery y Angular JS
+se pueden hacer demasiadas cosas, en realidad esto lo estoy aprendiendo
+desde cero porque odiaba con todas las fuerzas de mi alma a JavaScript
+pero ahora me doy cuenta que merecía una oportunidad y la ha tenido
+Siento que gracias a ésto he crecido considerablemente a nivel profesional
+y por eso les doy las gracias a ustedes equipo SENA por esto.
+*/
+
 app.filter('splitStringAndGetTheIndex', function() {
 	return function(input, splitChar, splitIndex) {
 		var inputChar = input.toString();
@@ -66,31 +75,6 @@ app.controller('valores', function($scope) {
 });
 
 app.controller('navigationController', function($scope) {
-
-	var locationPage = location.toString();
-	var partsOfLocation = locationPage.split('/');
-	$scope.parts = partsOfLocation[partsOfLocation.length-1];
-
-	var last = $scope.parts
-
-	console.log(last);
-
-	var activeIndex = "";
-	var activeService = "";
-
-	switch (last) {
-		case 'index.html':
-		activeIndex = "active";
-		break;
-		case 'servicios.html':
-		activeService = "active";
-		break;
-		default:
-		break;
-	}
-
-	$scope.activeIndex = activeIndex;
-	$scope.activeService = activeService;
 
 	$scope.LinkFunc = function(link, idClass) {
 		window.location.assign(link);

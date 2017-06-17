@@ -1,11 +1,45 @@
+<script>
+$(document).ready(function(){
+
+    //Validamos la localización actual de la página
+
+    /*
+    Esta función ha sido una de las más complicadas que he hecho hasta ahora
+    en JavaScript y puedo jurar que no la he sacado de ningún lado sino que la
+    cree por mi propia cuenta
+    */
+
+    var locationPage = location.toString();
+    var partsOfLocation = locationPage.split('/');
+    var parts = partsOfLocation[partsOfLocation.length-1];
+
+    var last = parts.toString();
+
+    var index = $('#startLink');
+    var servicios = $('#serviciosLink');
+
+    switch (last) {
+        case 'index.html':
+            index.addClass('active');
+            break;
+        case 'servicios.html':
+            servicios.addClass('active');
+            break;
+        default:
+
+    }
+
+});
+</script>
+
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
             <a class="navbar-brand" href="" ng-click="LinkFunc('index.html')">Corporación Freya</a>
         </div>
         <ul class="nav navbar-nav">
-            <li id="startLink"><a class="{{ activeIndex }}" href="" ng-click="LinkFunc('index.html')">Inicio</a></li>
-            <li id="serviciosLink"><a class="{{ activeService }}" href="" ng-click="LinkFunc('servicios.html')">Servicios</a></li>
+            <li id="startLink"><a href="" ng-click="LinkFunc('index.html')">Inicio</a></li>
+            <li id="serviciosLink"><a href="" ng-click="LinkFunc('servicios.html')">Servicios</a></li>
         </ul>
     </div>
 </nav>
