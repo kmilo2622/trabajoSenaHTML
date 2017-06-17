@@ -1,5 +1,5 @@
 <script>
-$(document).ready(function(){
+    $(document).ready(function(){
 
     //Validamos la localización actual de la página
 
@@ -20,14 +20,39 @@ $(document).ready(function(){
 
     switch (last) {
         case 'index.html':
-            index.addClass('active');
-            break;
+        index.addClass('active');
+        break;
         case 'servicios.html':
-            servicios.addClass('active');
-            break;
+        servicios.addClass('active');
+        break;
         default:
 
     }
+
+
+    // Este efecto me permite animar ciertos divs para que tengan un fade in
+    // fue extraido de la siguiente url https://codepen.io/annalarson/pen/GesqK
+    // Tengo que dar credito por ese gran aporte...
+
+    /* Every time the window is scrolled ... */
+    $(window).scroll( function(){
+
+        /* Check the location of each desired element */
+        $('.showme').each( function(i){
+
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+
+                $(this).animate({'opacity':'1'},2500);
+
+            }
+            
+        }); 
+
+    });
 
 });
 </script>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
 body {
 	background-color: #f0f0f0;
 	overflow-x: hidden;
@@ -6,11 +8,12 @@ body {
 
 footer {
 	background-color: #BDBDBD;
-	font-family: 'Bubbler One', sans-serif;
 	font-size: 15px;
 	color: white;
-	background: url("http://www.thebrasilians.com/wp-content/uploads/2016/08/footer-background-011.jpg");
+	font-family: 'Indie Flower', cursive;
 	font-weight: bold;
+	background: url("http://www.thebrasilians.com/wp-content/uploads/2016/08/footer-background-011.jpg");
+	letter-spacing: 1px;
 	padding: 30px;
 }
 
@@ -30,20 +33,20 @@ footer a:hover {
 
 .background-first {
 	width: 100%;
-	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("//cdn.paper4pc.com/images/landscape-sunset-sun-reflection-wallpaper-1.jpg");
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("http://cdn.paper4pc.com/images/landscape-sunset-sun-reflection-wallpaper-1.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 	height: 350px;
 	color: black;
 	text-shadow: black 0.3em 0.3em 0.3em;
-    padding-top: 240px;
-    padding-bottom: 280px;
+	padding-top: 240px;
+	padding-bottom: 280px;
 }
 
 .background-second {
 	width: 100%;
-	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("//onfocusproduction.com/wp-content/uploads/2016/08/Landscape-wallpaper-16.jpg");
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("http://onfocusproduction.com/wp-content/uploads/2016/08/Landscape-wallpaper-16.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -63,4 +66,10 @@ footer a:hover {
 
 .white {
 	background-color: white !important;
+}
+
+
+/*Css para Animaciones*/
+.showme {
+	opacity:0;
 }
