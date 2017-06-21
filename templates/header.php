@@ -49,6 +49,8 @@
                     servicios.addClass('active');
                     break;
                 default:
+                    index.addClass('active');
+                    break;
 
                         }
 

@@ -5,6 +5,12 @@
 
 <div class="container containerBody1" ng-controller="controllerBody">
 
+    <?php if(isset($_GET['mensaje']) == 1) : ?>
+    <div class="alert alert-success">
+        <strong>Éxito!</strong> Mensaje Enviado con Éxito.
+    </div>
+    <?php endif ?>
+
     <div class="col-md-6">
 
         <form class="form-horizontal" method="post" action="correo.php">
@@ -17,6 +23,11 @@
             <div class="form-group">
                 <label class="control-label">Introduzca su apellido:</label>
                 <input type="text" class="form-control input-center" name="apellido" ng-model="last_name">
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Introduzca su correo electrónico *:</label>
+                <input type="email" required class="form-control input-center" name="email" ng-model="correo_electronico">
             </div>
 
             <div class="form-group">
@@ -78,6 +89,22 @@
             </div>
         </div>
 
+        <br>
+
+        <div ng-if="correo_electronico != null && correo_electronico != ''">
+            <div class="form-group">
+                <label class="control-label col-sm-2">Correo Electrónico:</label>
+                <div class="col-sm-10">
+                    <p ng-cloak>{{ correo_electronico }}</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-md-12">
+        <div class="alert alert-info">
+            <strong>Información!</strong> Todos los campos marcados con asterisco son requeridos.
+        </div>
     </div>
 </div>
 

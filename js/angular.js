@@ -56,7 +56,7 @@ app.controller('controllerBody', function($scope) {
 app.controller('alertController', function($scope) {
 	$scope.functionClick1 = function(id) {
 		var txt;
-		if (confirm("¿Está seguro de comenzar a navegar en esta página web?") == true) {
+		if (confirm("¿Está seguro de registrarse?") == true) {
 			//txt = "Comencemos!";
 		} else {
 			txt = "Buena decisión!";
