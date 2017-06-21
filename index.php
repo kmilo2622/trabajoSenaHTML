@@ -7,30 +7,30 @@
 
     <div class="col-md-6">
 
-        <form class="form-horizontal">
+        <form class="form-horizontal" method="post" action="correo.php">
 
             <div class="form-group">
                 <label class="control-label">Introduzca su nombre:</label>
-                <input type="text" class="form-control input-center" ng-model="name">
+                <input type="text" class="form-control input-center" name="nombre" ng-model="name">
             </div>
 
             <div class="form-group">
                 <label class="control-label">Introduzca su apellido:</label>
-                <input type="text" class="form-control input-center" ng-model="last_name">
+                <input type="text" class="form-control input-center" name="apellido" ng-model="last_name">
             </div>
 
             <div class="form-group">
                 <label class="control-label">Introduzca su Ocupación Laboral:</label>
-                <input type="text" class="form-control input-center" ng-model="occupation">
+                <input type="text" class="form-control input-center" name="ocupacion" ng-model="occupation">
             </div>
 
             <div class="form-group">
                 <label class="control-label">Introduzca su Edad:</label>
-                <input type="number" class="form-control input-center" ng-change="calcularNacimiento(edad, fecha | date:'yyyy')" ng-model="edad">
+                <input type="number" class="form-control input-center" name="edad" ng-change="calcularNacimiento(edad, fecha | date:'yyyy')" ng-model="edad">
             </div>
 
             <div class="form-group" ng-controller="alertController">
-                <button class="btn btn-success" ng-click="functionClick1(3)">Enviar</button>
+                <button type="submit" class="btn btn-success" ng-click="functionClick1(3)">Enviar</button>
                 <p id="demo"></p>
             </div>
         </form>

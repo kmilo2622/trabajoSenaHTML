@@ -58,8 +58,6 @@ app.controller('alertController', function($scope) {
 		var txt;
 		if (confirm("¿Está seguro de comenzar a navegar en esta página web?") == true) {
 			//txt = "Comencemos!";
-			alert("Que mala decisión");
-			window.location.assign("servicios.html");
 		} else {
 			txt = "Buena decisión!";
 		}
