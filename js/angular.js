@@ -40,7 +40,7 @@ $(window).scroll(function(e){
 app.controller('controllerHeader', function($scope) {
 	$scope.page_title = "Actividad de Aprendizaje";
 	$scope.nombre_estudiante = "Juan Camilo Arroyave Rico";
-	$scope.lenguajes = "HTML, CSS, JavaScript";
+	$scope.lenguajes = "PHP";
 });
 
 app.controller('controllerBody', function($scope) {
