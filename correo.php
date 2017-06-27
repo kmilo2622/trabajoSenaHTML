@@ -70,7 +70,7 @@ $message = str_replace('%email%', $email, $message);
 
 //Esta versión comentariada de PHP mailer es la que necesita de contraseña
 
-/*$mail = new PHPMailer();
+$mail = new PHPMailer();
 $mail->IsSMTP();
 $mail->SMTPAuth = true;
 $mail->SMTPSecure = "tls";
@@ -84,13 +84,13 @@ $mail->AddAddress($destinatario, 'Registro');
 $mail->IsHTML(true);
 $mail->SMTPDebug = 0;
 $mail->Subject = $asunto;
-$mail->MsgHTML($message);*/
+$mail->MsgHTML($message);
 
-$mail = new PHPMailer;
+/*$mail = new PHPMailer;
 $mail->setFrom($mailsettings['username'], 'Juan Camilo Arroyave Rico');
 $mail->addAddress($destinatario, 'Registro');
 $mail->Subject = $asunto;
-$mail->Body = 'Hi! This is my first e-mail sent through PHPMailer.';
+$mail->Body = 'Hi! This is my first e-mail sent through PHPMailer.';*/
 
 if(!$mail->Send()) {
     $mensajeria = $mail->ErrorInfo;
